@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .demo1{
+                background-color: aquamarine;
+            }
+            #demo2{
+                background-color: darkcyan;
+            }
+
+        </style>
+    </head>
+    <body>
+        <img src="mai2021.jpg">
+        <form action="destination.html" method="POST">
+            <fieldset>
+                <legend>Information personnelle :</legend>
+
+                <label for="Code">Nom d'utilisateur :</label>
+                <input type="text" id="Code" name="Nom" required autofocus placeholder="Votre code utilisateur" title="Nom utilisateur">
+
+                <label for="email">Courriel :</label>
+                <input type="email" id="email" name="email" required autofocus placeholder="Votre courriel" title="Adresse courriel">
+
+                <label for="phone">Numéro de téléphone :</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Votre numéro de téléphone" title="Numéro de téléphone">
+                
+                <select name="Pays" required>
+                    <option value=""> </option>
+                    <option value="CA">Canada</option>
+                    <option value="USA">État-Unis</option>
+                    <option value="BLZ">Bélize</option>
+                </select>
+
+            </fieldset>
+            <fieldset>
+                <legend>Détail de réservation : </legend>
+
+                <label for="date">Date de réservation:</label>
+                <input type="date" id="date" name="date"  placeholder="Date de réservation" min="2021-01-01">
+
+                <label for="nbv">Nombre de visiteur:</label>
+                <input type="number" id="nbv" name="nbv"  placeholder="Nb personne" min="1" max="5">
+
+                <p>Est-ce que vous désirez des repas? </p>
+                <label for="avecrepas">OUI</label>
+                <input type="radio" id="avecrepas" name="repas">
+
+                <label for="sansrepas">NON</label>
+                <input type="radio" id="sansrepas" name="repas">
+                <br>
+                <label for="balcon">Désirez-vous un balcon ?</label>
+                <input type="checkbox" id="balcon" name="balcon" value="oui" checked>
+                <br>
+                <input type="image" src="bouton.jpg" alt="Image d'un bouton">
+
+            
+            </fieldset>
+        </form>
+    </body>
+</html>
+
